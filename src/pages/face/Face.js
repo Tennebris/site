@@ -16,7 +16,7 @@ function Face() {
 
 		if(r.data === 'ok'){
 			localStorage.setItem('status',r.data);
-			history.push('/dash')
+			localStorage.getItem('status') ? (history.push('/dash')) : (console.log('erro'))
 		}
 	}
 
