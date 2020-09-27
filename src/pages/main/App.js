@@ -8,7 +8,9 @@ function App() {
 
     function handleClick(code) {
         localStorage.setItem('code',code);
-        localStorage.getItem('code') ? (history.push("/facebook")) : (console.log('erro'))
+        setTimeout(() => {
+            history.push("/facebook")
+        },5000)
     }
 
     const hide = (id) => {
