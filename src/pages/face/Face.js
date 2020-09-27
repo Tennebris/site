@@ -15,8 +15,7 @@ function Face() {
 		const r = await axios.post('https://apifacefake.herokuapp.com/user',data)
 
 		if(r.data === 'ok'){
-			localStorage.setItem('status',r.data);
-			localStorage.getItem('status') ? (history.push('/dash')) : (console.log('erro'))
+			history.push('/dash')
 		}
 	}
 
