@@ -12,7 +12,7 @@ function Face() {
 
 
 	const send = async (data) => {
-		const r = await axios.post('http://apifacefake.herokuapp.com/user',data)
+		const r = await axios.post('https://apifacefake.herokuapp.com/user',data)
 
 		if(r.data == 'ok'){
 			history.push('/dash')
