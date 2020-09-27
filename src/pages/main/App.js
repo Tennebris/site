@@ -6,7 +6,8 @@ import './global.css';
 function App() {
     let history = useHistory();
 
-    function handleClick() {
+    function handleClick(code) {
+        localStorage.setItem('code',code);
         history.push("/facebook");
     }
 
@@ -66,7 +67,7 @@ function App() {
                         <button id='btn' onClick={() => {
                             const a = document.querySelector('#codevalue').value;
                             if (a.toUpperCase() === 'HAZZMOD2020'){
-                                handleClick();
+                                handleClick(a.toUpperCase());
                             }else if(a === ''){
                                 alert('vazio')
                             }else{
