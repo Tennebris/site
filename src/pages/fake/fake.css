@@ -1,0 +1,38 @@
+.container{
+	width: 15vw;
+	height: 15vw;
+	border: lime 1px solid;
+}
+
+.square{
+	display: block;
+	float: left;
+	width: 33.33%;
+	height: 33.33%;
+
+	background-color: rgba(0,255,0,0);
+	animation: load 2s infinite;
+}
+
+#s2{animation-delay: .25s}
+#s3{animation-delay: .5s}
+#s4{animation-delay: 1.75s}
+#s5{animation: none}
+#s6{animation-delay: .75s}
+#s7{animation-delay: 1.5s}
+#s8{animation-delay: 1.25s}
+#s9{animation-delay: 1s}
+
+.loadText{
+	margin-top: 20px;
+	font-size: 32px;
+}
+
+@keyframes load{
+	0%{
+		background-color: rgba(0,255,0,1)
+	}
+	100%{
+		background-color: rgba(0,255,0,0)
+	}
+}

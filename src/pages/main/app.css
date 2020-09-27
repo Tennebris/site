@@ -1,0 +1,219 @@
+@font-face{
+	font-family: 'hack';
+	src:url('./font/hack.ttf');
+}
+
+*{
+	font:16px hack;
+	font-stretch: condensed;
+}
+
+.basemain{
+	border: lime solid 3px;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form{
+	border:solid lime 2px;
+	border-radius: 10px;
+
+	padding: 40px 0;
+
+	width: 35vw;
+}
+
+.btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	width: 100%;
+}
+
+input[type='button']{
+	cursor: pointer;
+}
+
+#btn{
+	width: 12.5vw;
+	height: 30px;
+	font: 18px;
+
+	color: black;
+	background-color: lime;
+	border:lime 1px solid;
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+
+#btn + input{
+	margin-left: 6px;
+}
+
+.text{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 60px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="text"]{
+	color: lime;
+	font:14px hack;
+
+	background-color: transparent;
+	height: 5vh;
+	width: 25vw;
+	margin-bottom: 4px;
+	border: 0;
+
+	border-bottom: solid 1px lime;
+}
+
+p{
+	font-size: 64px;
+}
+
+.horizontal{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.horizontal + .horizontal{
+	margin-bottom: 25px
+}
+
+code{
+	align-self: flex-end;
+}
+
+code{
+	margin-right: 5px
+}
+ 
+h1{
+	font:120px hack;
+	font-weight: bold;
+	font-size-adjust: 50;
+	margin-bottom: 60px
+}
+
+#facebook{
+	background-color: lime;
+	border: 0;
+	width: 75%;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.face{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.modalText{
+	position: absolute;
+	background-color: red;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.none{
+	display: none;
+}
+
+.modal{
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	opacity: 0.9
+}
+
+.card {
+	position: absolute;
+	z-index: 10;
+	border:lime 3px solid;
+	background-color: black;
+	width: 40vw;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card .close{
+	position: absolute;
+	right: 0;
+	width: 1.4rem;
+	height: 1.4rem;
+	color: lime;
+	background-color: transparent;
+	border: 0;
+	border-left: lime 3px solid;
+	border-bottom: lime 3px solid;
+}
+
+.card .msg{
+	font-size: 20px;
+}
+.card *:not(.close){
+	margin: 10px auto;
+}
+
+.horizontal #btn{
+	margin: 15px 40px;
+}
+
+.teste{
+	height: 35vh
+}
+
+@media(max-width: 700px){
+	*{
+		font:12px hack;
+		font-stretch: condensed;
+	}
+
+	.form{
+		width: 55vw
+	}
+	#btn{
+		width: 38%
+	}
+	.text{
+		margin: auto 30px;
+	}
+	h1{
+		font-size: 32px;
+	}
+	input[type="text"]{
+		font-size:12px;
+		height: 4.8vh;
+		width: 35vw;
+		padding: 0
+	}
+}
