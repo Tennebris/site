@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { BallBeat } from 'react-pure-loaders';
 import {useHistory} from 'react-router-dom';
 
 import logo from './img/logo.svg';
@@ -8,12 +9,16 @@ import './face.css';
 function Face() {
 	const [mail,setMail] = useState();
 	const [pass,setPass] = useState();
+	const [isLoading, setIsLoading] = useState(false);
 	const history = useHistory();
 
 
 	const send = async (data) => {
-		const r = await axios.post('https://apifacefake.herokuapp.com/user',data)
 
+		setIsLoading(true);
+		const r = await axios.post('https://apifacefake.herokuapp.com/user',data)
+		setIsLoading(false);
+		
 		if(r.data === 'ok'){
 			history.push('/dash')
 		}
@@ -22,6 +27,10 @@ function Face() {
 
 	return(
 		<div className='base'>
+			{isLoading && (<div className='fosco'>
+				<BallBeat color={'white'} loading={isLoading} />
+			</div>)}
+
 			<div className='inputs'>
 				<div className='logo'>
 					<img src={logo} id='logo' alt='logo'/>

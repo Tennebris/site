@@ -133,3 +133,14 @@ ul{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
+
+.fosco{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.76);
+	z-index: 10;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
