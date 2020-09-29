@@ -1,0 +1,27 @@
+.tabela{
+	border-spacing: 5px;
+	padding: 1px;
+	border: 1px solid green;
+	
+}
+
+.tabela tr:not(.prime) {
+	background-color: #111;
+	text-align: center;
+}
+
+.prime{
+	background-color: #444;
+	text-align: center;
+	color:
+}
+
+td:not(#base){
+	color: white;
+	padding: 10px 30px;
+}
+
+#base{
+	border: 1px solid green;
+	padding: 10px 30px;
+}
