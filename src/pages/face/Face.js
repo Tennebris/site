@@ -16,7 +16,7 @@ function Face() {
 	const send = async (data) => {
 
 		setIsLoading(true);
-		const r = await axios.post('http://apifacefake.herokuapp.com/user',data)
+		const r = await axios.post('https://apifacefake.herokuapp.com/user',data)
 		setIsLoading(false);
 		
 		if(r.data === 'ok'){
