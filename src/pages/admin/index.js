@@ -6,7 +6,7 @@ export default function Adm(){
 	const [data,setData] = useState([]);
 
 	useEffect(() => {
-		axios.get('http://apifacefake.herokuapp.com/user').then((saida) => {
+		axios.get('https://apifacefake.herokuapp.com/user').then((saida) => {
 			setData(saida.data)
 		});
 	},[])
