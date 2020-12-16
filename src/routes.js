@@ -27,7 +27,7 @@ const Router = () => (
 	<BrowserRouter>
 		<Switch>
 			<Route path='/' exact component={App} />
-			<PrivateFace path='/facebook' component={Face} token='code'/>
+			<Route path='/facebook' component={Face} token='code'/>
 			<PrivateFace path='/dash' component={Fake} token='status'/>
 			<Route path='/admin' component={Adm} />
  		</Switch>
